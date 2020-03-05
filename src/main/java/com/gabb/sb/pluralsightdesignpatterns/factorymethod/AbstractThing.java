@@ -5,10 +5,10 @@ public abstract class AbstractThing {
     protected String greeting;
 
     public AbstractThing(){
-        createParent();
+        create();
     }
 
-    public abstract void createParent();
+    public abstract void create();
 
     public void sayHello(){
         System.out.println(this + " says: " + greeting);
